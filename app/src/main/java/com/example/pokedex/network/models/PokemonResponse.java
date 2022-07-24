@@ -10,4 +10,20 @@ public class PokemonResponse {
     private String previous;
     @SerializedName("results")
     private List<Pokemon> pokemonList;
+
+    public int getCount() {
+        return count;
+    }
+
+    public String getNext() {
+        return next;
+    }
+
+    public String getPrevious() {
+        return previous;
+    }
+
+    public List<Pokemon> getPokemonList() {
+        return pokemonList;
+    }
 }
