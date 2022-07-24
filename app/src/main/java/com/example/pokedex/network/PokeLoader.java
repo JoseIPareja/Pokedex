@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class PokeLoader implements PokeAPI {
     PokeAPI api;
-    final String URL_BASE = "https://pokeapi.co/ap/v2/";
+    final String URL_BASE = "https://pokeapi.co/api/v2/";
 
     public PokeLoader() {
         Retrofit retrofit = new Retrofit.Builder()

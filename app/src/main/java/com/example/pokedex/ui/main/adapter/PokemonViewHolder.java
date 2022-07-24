@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.pokedex.databinding.MainRecyclerItemBinding;
 import com.example.pokedex.network.models.Pokemon;
+import com.squareup.picasso.Picasso;
 
 public class PokemonViewHolder extends RecyclerView.ViewHolder {
 
@@ -18,6 +19,7 @@ public class PokemonViewHolder extends RecyclerView.ViewHolder {
 
     public void drawPokemon(Pokemon pokemon) {
         binding.tvPokemonTitle.setText(pokemon.getName());
+        Picasso.get().load(pokemon.getUrl()).into(binding.ivPokemon);
         binding.tvPokemonDescription.setText(pokemon.getName());
     }
 }
